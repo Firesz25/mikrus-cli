@@ -13,7 +13,7 @@ rust cli client for [mikr.us](https://mikr.us)
 * serwery - get list of you all servers
 * restart - restart server
 * logs - get last 10 logs
-* logs <id> - get logs for server with id <id>
+* logs id - get logs for server with id <id>
 * anfetamina - run anfetamina on server
 * db - get database login information
 * exec <command> - run command on server
