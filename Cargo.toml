@@ -6,6 +6,7 @@ authors = ["firesz25 <olek.cz@outlook.com>"]
 readme = "README.md"
 keywords = ["cli", "mikrus"]
 description = "cli client for mikr.us api"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/Firesz25/mikrus-cli"
 homepage = "https://github.com/Firesz25/mikrus-cli"
 categories = ["command-line-utilities"]
