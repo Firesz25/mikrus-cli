@@ -1,0 +1,24 @@
+[package]
+name = "mikrus-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["firesz25 <olek.cz@outlook.com>"]
+readme = "README.md"
+keywords = ["cli", "mikrus"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "mikrus"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.51"
+clap = { version = "3.0.0-rc.4", features = ["derive"] }
+directories = "4.0.1"
+reqwest = "0.11.7"
+ron = "0.7.0"
+serde = "1.0.131"
+tokio = { version = "1.14.0", features = ["full"] }
+
+[features]
