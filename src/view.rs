@@ -1,5 +1,5 @@
-use std::io::Write;
 use anyhow::Result;
+use std::io::Write;
 
 pub const HELLO_MSG: &str = r#"
 __  __ ___ _  ______  _   _ ____         ____ _     ___
@@ -18,7 +18,9 @@ pub fn promt() -> Result<String> {
 }
 
 pub fn print_help() {
-    println!("{}", r#"comand line interface to mikr.us api
+    println!(
+        "{}",
+    r#"comand line interface to mikr.us api
 
     Klucz do API uzyskasz tutaj:
     https://mikr.us/panel/?a=api
@@ -43,5 +45,6 @@ pub fn print_help() {
 
     Uwaga:
     Limit czasu dla polecenia 'exec' to 60s. Dłuższe polecenia skończą się niepowodzeniem.
-    "#)
+    "#
+    )
 }

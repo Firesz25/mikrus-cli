@@ -5,6 +5,9 @@ edition = "2021"
 authors = ["firesz25 <olek.cz@outlook.com>"]
 readme = "README.md"
 keywords = ["cli", "mikrus"]
+description = "cli client for mikr.us api"
+repository = "https://github.com/Firesz25/mikrus-cli"
+homepage = "https://github.com/Firesz25/mikrus-cli"
 categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

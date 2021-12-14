@@ -1,6 +1,6 @@
-use std::path::PathBuf;
-use serde::{Serialize, Deserialize};
 use anyhow::Result;
+use serde::{Deserialize, Serialize};
+use std::path::PathBuf;
 
 use crate::view::promt;
 
@@ -12,18 +12,17 @@ pub struct Config {
 
 impl Config {
     pub fn new(srv: String, key: String) -> Self {
-
         Config { srv, key }
     }
 
     pub fn from_file() -> Result<Self> {
         let path = directories::ProjectDirs::from("", "", "mikrus-cli").unwrap();
-        let file =  std::fs::read_to_string(path.config_dir().join("config.ron")).unwrap();
+        let file = std::fs::read_to_string(path.config_dir().join("config.ron")).unwrap();
         Self::from_str(&file)
     }
 
     fn from_str(str: &str) -> Result<Self> {
-        let config: Config = match ron::from_str(str) {  
+        let config: Config = match ron::from_str(str) {
             Ok(config) => config,
             Err(_) => {
                 println!("Please input server number");
