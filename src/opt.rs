@@ -1,7 +1,7 @@
 use clap::Parser;
 
 #[derive(Parser, Debug)]
-#[clap(version = "0.1.0", author = "firesz25 <olek.cz@outlook.com>")]
+#[clap(version, author, about)]
 pub struct Opt {
     #[clap(short = 's', long)]
     pub srv: Option<String>,
